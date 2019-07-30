@@ -31,3 +31,5 @@ Feedback.create(score: 4, question_id: 2)
 
 Feedback.create(score: 5, question_id: 3)
 Feedback.create(score: 5, question_id: 3)
+
+User.create(name: "first user", option_1: 1, option_2: 1, option_3: 1)
