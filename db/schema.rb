@@ -53,7 +53,7 @@ ActiveRecord::Schema.define(version: 2019_07_30_172126) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "person_id"
-    t.string "quiz_id"
+    t.integer "quiz_id"
   end
 
 end

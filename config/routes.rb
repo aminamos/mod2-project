@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :catagories
+  resources :quizzes
   resources :feedbacks
   resources :answers
   resources :questions
