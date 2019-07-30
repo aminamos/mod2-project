@@ -1,3 +1,3 @@
 class Feedback < ApplicationRecord
-    belong_to :question
+    belongs_to :question
 end
