@@ -1,0 +1,9 @@
+<%= form_for @result do |f| %>
+  <% @quiz_questions.each do |q| %>
+  Question: <%= q.content %>
+  <br>
+  Options: <%= "answer list goes here" %>
+  <% end %>
+  <br>
+  <%= f.submit %>
+<% end %>
