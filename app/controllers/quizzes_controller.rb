@@ -15,4 +15,8 @@ class QuizzesController < ApplicationController
         @user.option_3 = params[:option_3]
         redirect_to quiz_results_path
     end
+
+    def results
+        
+    end
 end

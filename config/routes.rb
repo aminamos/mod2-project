@@ -6,5 +6,5 @@ Rails.application.routes.draw do
   resources :results
   resources :user
   root 'quizzes#index'
-  get '/quizzes/results' to: 'quizzes#results'
+  get '/quizzes/results', to: 'quizzes#results'
 end
