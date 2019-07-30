@@ -10,14 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_30_171204) do
+ActiveRecord::Schema.define(version: 2019_07_30_172126) do
 
   create_table "answers", force: :cascade do |t|
     t.integer "question_id"
     t.string "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "quiz_id"
   end
 
   create_table "feedbacks", force: :cascade do |t|
