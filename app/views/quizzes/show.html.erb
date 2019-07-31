@@ -2,8 +2,7 @@
   <% @quiz_questions.each do |q| %>
   Question: <%= q.content %>
   <br>
-  Options: <%= "answer list goes here" %>
-  <% end %>
-  <br>
-  <%= f.submit %>
+  Options: <%= @answers.each do |answer| %>
+          <%= f.radio_button :answer, answer.content %>
+          <% end %>
 <% end %>

@@ -14,7 +14,9 @@ class QuizzesController < ApplicationController
 
     def show
         # array of all questions associated w/ quiz
-        @quiz_questions = Quiz.all.first.questions
+        @quiz = Quiz.all.first
+        @quiz_questions = @quiz.questions
+        @answers = Answer.where(question_id: @quiz_questions.ids.first)
         @result = Result.new
         # @answers = Answer.find_by(question_id:)
     end
