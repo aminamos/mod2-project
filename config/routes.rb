@@ -4,10 +4,10 @@ Rails.application.routes.draw do
   resources :answers
   resources :questions
   resources :results
-  resources :people
-  #get '/', to: 'quizzes#index'
+  resources :user
   root 'quizzes#index'
+  get '/quizzes/results', to: 'quizzes#results'
+  get '/quizzes/aminindex', to: 'quizzes#aminindex'
   #get '/'
   #get 'quizzes/:id/show', to: 'quizzes/new'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
